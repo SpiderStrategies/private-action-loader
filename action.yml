@@ -10,6 +10,15 @@ inputs:
   pal-action-directory:
     description: 'The optional path to directory containing action.  Useful when multiple private actions are stored in the same repo'
     required: false
+  config-file:
+    description: 'The location of the branch config file'
+    required: true
+  repo-token:
+    description: 'The github token'
+    required: true
+outputs:
+  failure-message:
+    description: 'If the action failed this is a message that can be used elsewhere (e.g. Slack)'
 runs:
   using: 'node12'
   main: 'dist/index.js'
