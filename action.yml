@@ -17,8 +17,8 @@ inputs:
     description: 'The github token'
     required: true
 outputs:
-  failure-message:
-    description: 'If the action failed this is a message that can be used elsewhere (e.g. Slack)'
+  status-message:
+    description: 'A detailed status message that can be used elsewhere (e.g. Slack)'
 runs:
   using: 'node12'
   main: 'dist/index.js'
