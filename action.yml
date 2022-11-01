@@ -20,7 +20,7 @@ outputs:
   status-message:
     description: 'A detailed status message that can be used elsewhere (e.g. Slack)'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
 branding:
   icon: 'lock'
